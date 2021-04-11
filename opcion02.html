@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion 02</title>
+    <style>
+        *{
+            margin: 0;
+            /* border: 1px solid green; */
+            border: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2{
+            color: #a5baba;
+            text-align: center;
+            padding: 30px;
+            padding-bottom: 40px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #2d0783;
+            
+        }
+        .menuop{
+            background-color: #2d0783;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .menuop a:hover{
+            background-color: greenyellow;
+        }
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+
+        }
+        .articulos{
+            border: 1px solid #DCDCDC;
+            text-align: center;
+            margin: 5px;
+            height: 300px;
+            padding: 20px;
+            line-height: 40px;
+        }
+        .celdas{
+            padding: 10px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            margin: 5px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <div>
+            <a class="menuop" href="#">*</a>
+        </div>
+        <div>   
+            <a class="menuop" ref="#">CAMERAS</a>
+        </div>
+        <div>
+            <a class="menuop" ref="#">ABOUT</a>
+        </div>
+        <div>
+            <a class="menuop" ref="#">CONTACT</a>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2>Cameras</h2>
+        </div>
+        <div class="contenido">
+            <div class="celdas">
+                <img src="img/smartphone.jpg" alt="">
+                <h4>Smartphone</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="celdas">
+                <img src="img/polaroid.jpg" alt="">
+                <h4>Some Old Polaroid Camera That Produces Hipstery Efects</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="celdas">
+                <img src="img/gopro4.jpg" alt="">
+                <h4>GoPro Hero 4 Silver</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="celdas">
+                <img src="img/nikon.jpg" alt="">
+                <h4>Nikon D60</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="celdas">
+                <img src="img/canon.jpg" alt="">
+                <h4>Canon PowerShot g7</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="celdas">
+                <img src="img/kodak.jpg" alt="">
+                <h4>Kodak Camera C100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
