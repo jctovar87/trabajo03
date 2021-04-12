@@ -23,6 +23,8 @@
             flex-direction: row;
             justify-content: space-evenly;
             background-color: #2d0783;
+            padding: 6px;
+            font-size: 12px;
             
         }
         .menuop{
@@ -36,10 +38,15 @@
         }
         .contenido{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;  
 
+        }
+        @media screen and (max-width:768px) {
+         .contenido{
+            flex-direction: column;
+            }
         }
         .articulos{
             border: 1px solid #DCDCDC;
@@ -63,7 +70,13 @@
 <body>
     <nav class="menu">
         <div>
-            <a class="menuop" href="#">*</a>
+            <a class="menuop" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="14" height="14" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
+                  </svg>
+                </svg>
+            </a>
         </div>
         <div>   
             <a class="menuop" ref="#">CAMERAS</a>
@@ -84,6 +97,11 @@
                 <img src="img/smartphone.jpg" alt="">
                 <h4>Smartphone</h4>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
+                <div>
+                    <div class="precio"><p>Price 450 €</p></div>
+                    <div><p> </p></div>
+                    <div class="precio"><p>In Stock</p></div>
+                </div>
             </div>
             <div class="celdas">
                 <img src="img/polaroid.jpg" alt="">
@@ -95,6 +113,9 @@
                 <h4>GoPro Hero 4 Silver</h4>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
+        </div>
+
+        <div class="contenido">
             <div class="celdas">
                 <img src="img/nikon.jpg" alt="">
                 <h4>Nikon D60</h4>
